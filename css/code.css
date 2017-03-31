@@ -1,0 +1,16 @@
+.code-block {
+  margin: 2rem 0rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+}
+.code-block .linenums li {
+  background-color: #f9f9f9;
+}
+.prettyprint {
+  width: auto;
+  overflow: auto;
+  max-height: 300px;
+  background: #f9f9f9 !important;
+}
