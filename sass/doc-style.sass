@@ -1,0 +1,84 @@
+@import 'nav'
+
+=border-box
+  box-sizing: border-box
+
+html
+  font-family: 'Spoqa Han Sans', 'Sans-serif'
+  font-size: 10px
+body
+  font-size: 1.6rem
+
+*,
+*::after,
+*::before
+  margin: 0
+  padding: 0
+  +border-box
+
+$red: rgb(255, 120, 121)
+$orange:  rgb(242, 202, 104)
+$green:  rgb(92, 209, 139)
+$blue:  rgb(88, 162, 237)
+
+.doc-header
+  background: $orange
+  padding: 10rem 8rem
+  h2
+    font-size: 5rem
+  p 
+    font-size: 3rem
+    font-weight: 300
+
+
+.wrapper
+  padding: 3rem
+
+.is-red
+  background: $red
+  color: #fff
+.is-orange
+  background: $orange
+  color: #000
+.is-green
+  background: $green
+  color: #fff
+.is-blue
+  background: $blue
+  color: #fff
+
+.column
+  p
+    padding: 2rem
+    text-align: center
+    border-radius: 5px
+
+[class*='col'] p
+  text-align: center
+  border-radius: 5px
+  padding-top: 1rem
+  padding-bottom: 1rem
+
+.col-lg-1 p,
+.col-lg-5 p,
+.col-lg-9 p
+  background: $red
+  color: #fff
+
+.col-lg-2 p,
+.col-lg-6 p,
+.col-lg-10 p
+  background: $orange
+  color: #000
+
+.col-lg-3 p,
+.col-lg-7 p,
+.col-lg-11 p
+  background: $green
+  color: #fff
+
+.col-lg-4 p,
+.col-lg-8 p,
+.col-lg-12 p
+  background: $blue
+  color: #fff

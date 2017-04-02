@@ -6,31 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Grid layout</title>
   <link rel="stylesheet" href="css/grid.css">
-  <!-- <link rel="stylesheet" href="css/code_prettify.css"> -->
+  <link rel="stylesheet" href="css/doc-style.css">
   <link rel="stylesheet" href="css/code.css">
   <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <!-- <header class="header">
-  </header> -->
+  <header>
+    <h2 class="nav-heading"><a href="#">/* Mango Trick */</a></h2>
+    <nav class="nav">
+      <div class="nav-left">
+        <ul class="category">
+          <li><a href="#">category</a></li>
+          <li><a href="#">category</a></li>
+          <li><a href="#">category</a></li>
+          <li><a href="#">category</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="doc-header">
+    <h2>Grid</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa voluptatibus esse voluptates, tempore dignissimos amet!</p>
+  </div>
   <div class="wrapper">
     <h2>1. 기본 flex grid</h2>
     <p>원하는 만큼 column을 추가하면 자동으로 적용되는 그리드 시스템</p>
     <div class="flex-grid">
-      <div class="column" style="background-color: #FF7978;">
-        <p>column</p>
+      <div class="column">
+        <p class="is-red">column</p>
       </div>
-      <div class="column" style="background-color: #F2CA68;">
-        <p>column</p>
+      <div class="column">
+        <p class="is-orange">column</p>
       </div>
-      <div class="column" style="background-color: #58A2ED;">
-        <p>column</p>
+      <div class="column">
+        <p class="is-green">column</p>
       </div>
     </div>
 
 <!-- code block -->
 <div class="code-block">
-<pre class="prettyprint linenums">
+<pre class="prettyprint">
 <code><div class="flex-grid">
   <div class="column">
     <p>column</p>
@@ -45,29 +60,29 @@
 </div>
 <!-- END code bock -->
     <div class="flex-grid">
-      <div class="column" style="background-color: #FF7978;">
-        <p>column</p>
+      <div class="column">
+        <p class="is-red">column</p>
       </div>
-      <div class="column" style="background-color: #F2CA68;">
-        <p>column</p>
+      <div class="column">
+        <p class="is-orange">column</p>
       </div>
-      <div class="column" style="background-color: #58A2ED;">
-        <p>column</p>
+      <div class="column">
+        <p class="is-green">column</p>
       </div>
-      <div class="column" style="background-color: #FF7978;">
-        <p>column</p>
+      <div class="column">
+        <p class="is-blue">column</p>
       </div>
-      <div class="column" style="background-color: #F2CA68;">
-        <p>column</p>
+      <div class="column">
+        <p class="is-red">column</p>
       </div>
-      <div class="column" style="background-color: #58A2ED;">
-        <p>column</p>
+      <div class="column">
+        <p class="is-orange">column</p>
       </div>
     </div>
 
 <!-- code block -->
 <div class="code-block">
-<pre class="prettyprint linenums">
+<pre class="prettyprint">
 <code><div class="flex-grid">
   <div class="column">
     <p>column</p>
@@ -93,227 +108,227 @@
 
     <h2>2. 데스크탑 반응형 Grid + gutter</h2>
     <div class="row">
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-      <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
+      <div class="col-sm-12 col-md-4 col-lg-1 col-xl-1"><p>col-sm-12 col-md-4 col-lg-1 col-xl-1</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+      <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
     </div>
 
 <div class="code-block">
-<pre class="prettyprint linenums"><code><div class="row">
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
-  <div class="col-xl-1 col-l-1 col-m-4 col-s-12">col-xl-1 col-l-1 col-m-4 col-s-12</div>
+<pre class="prettyprint"><code><div class="row">
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
+  <div class="col-xl-1 col-lg-1 col-md-4 col-sm-12"><p>col-xl-1 col-lg-1 col-md-4 col-sm-12</p></div>
 </div></code></pre>
 </div>
 
     <div class="row">
-      <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
-      <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
-      <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
-      <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
-      <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
-      <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
     </div>
 
 <div class="code-block">
-<pre class="prettyprint linenums"><code><div class="row">
-  <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
-  <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
-  <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
-  <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
-  <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
-  <div class="col-xl-2 col-l-2 col-m-6 col-s-12">col-xl-2 col-l-2 col-m-6 col-s-12</div>
+<pre class="prettyprint"><code><div class="row">
+  <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
+  <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
+  <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
+  <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
+  <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
+  <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12"><p>col-xl-2 col-lg-2 col-md-6 col-sm-12</p></div>
 </div></code></pre>
 </div>
 
     <div class="row">
-      <div class="col-xl-3 col-l-3">col-xl-3 col-l-3</div>
-      <div class="col-xl-3 col-l-3">col-xl-3 col-l-3</div>
-      <div class="col-xl-3 col-l-3">col-xl-3 col-l-3</div>
-      <div class="col-xl-3 col-l-3">col-xl-3 col-l-3</div>
+      <div class="col-xl-3 col-lg-3"><p>col-xl-3 col-lg-3</p></div>
+      <div class="col-xl-3 col-lg-3"><p>col-xl-3 col-lg-3</p></div>
+      <div class="col-xl-3 col-lg-3"><p>col-xl-3 col-lg-3</p></div>
+      <div class="col-xl-3 col-lg-3"><p>col-xl-3 col-lg-3</p></div>
     </div>
 
 <div class="code-block">
-<pre class="prettyprint linenums"><code><div class="row">
-  <div class="col-xl-3 col-l-3">col-xl-3 col-l-3</div>
-  <div class="col-xl-3 col-l-3">col-xl-3 col-l-3</div>
-  <div class="col-xl-3 col-l-3">col-xl-3 col-l-3</div>
-  <div class="col-xl-3 col-l-3">col-xl-3 col-l-3</div>
+<pre class="prettyprint"><code><div class="row">
+  <div class="col-xl-3 col-lg-3"><p>col-xl-3 col-lg-3</p></div>
+  <div class="col-xl-3 col-lg-3"><p>col-xl-3 col-lg-3</p></div>
+  <div class="col-xl-3 col-lg-3"><p>col-xl-3 col-lg-3</p></div>
+  <div class="col-xl-3 col-lg-3"><p>col-xl-3 col-lg-3</p></div>
 </div></code></pre>
 </div>
 
     <div class="row">
-      <div class="col-xl-4 col-l-4">col-xl-4 col-l-4</div>
-      <div class="col-xl-8 col-l-8">col-xl-8 col-l-8</div>
+      <div class="col-xl-4 col-lg-4"><p>col-xl-4 col-lg-4</p></div>
+      <div class="col-xl-8 col-lg-8"><p>col-xl-8 col-lg-8</p></div>
     </div>
 
 <div class="code-block">
-<pre class="prettyprint linenums"><code><div class="row">
-  <div class="col-xl-4 col-l-4">col-xl-4 col-l-4</div>
-  <div class="col-xl-8 col-l-8">col-xl-8 col-l-8</div>
+<pre class="prettyprint"><code><div class="row">
+  <div class="col-xl-4 col-lg-4"><p>col-xl-4 col-lg-4</p></div>
+  <div class="col-xl-8 col-lg-8"><p>col-xl-8 col-lg-8</p></div>
 </div></code></pre>
 </div>
 
       <div class="row">
-        <div class="col-xl-6 col-l-6">col-xl-6 col-l-6</div>
-        <div class="col-xl-6 col-l-6">col-xl-6 col-l-6</div>
-        <div class="col-xl-12 col-l-12">col-xl-12 col-l-12</div>
+        <div class="col-xl-6 col-lg-6"><p>col-xl-6 col-lg-6</p></div>
+        <div class="col-xl-6 col-lg-6"><p>col-xl-6 col-lg-6</p></div>
+        <div class="col-xl-12 col-lg-12"><p>col-xl-12 col-lg-12</p></div>
       </div>
 
 <div class="code-block">
-<pre class="prettyprint linenums"><code><div class="row">
-  <div class="col-xl-6 col-l-6">col-xl-6 col-l-6</div>
-  <div class="col-xl-6 col-l-6">col-xl-6 col-l-6</div>
-  <div class="col-xl-12 col-l-12">col-xl-12 col-l-12</div>
+<pre class="prettyprint"><code><div class="row">
+  <div class="col-xl-6 col-lg-6"><p>col-xl-6 col-lg-6</p></div>
+  <div class="col-xl-6 col-lg-6"><p>col-xl-6 col-lg-6</p></div>
+  <div class="col-xl-12 col-lg-12"><p>col-xl-12 col-lg-12</p></div>
 </div></code></pre>
 </div>
 
     <div class="row">
-      <div class="col-xl-6 col-l-6">col-xl-6 col-l-6</div>
-      <div class="col-xl-6 col-l-6">col-xl-6 col-l-6</div>
+      <div class="col-xl-6 col-lg-6"><p>col-xl-6 col-lg-6</p></div>
+      <div class="col-xl-6 col-lg-6"><p>col-xl-6 col-lg-6</p></div>
     </div>
 
 <div class="code-block">
-<pre class="prettyprint linenums"><code><div class="row">
-  <div class="col-xl-6 col-l-6">col-xl-6 col-l-6</div>
-  <div class="col-xl-6 col-l-6">col-xl-6 col-l-6</div>
+<pre class="prettyprint"><code><div class="row">
+  <div class="col-xl-6 col-lg-6"><p>col-xl-6 col-lg-6</p></div>
+  <div class="col-xl-6 col-lg-6"><p>col-xl-6 col-lg-6</p></div>
 </div></code></pre>
 
   </div>
     <h2>3. push와 pull을 활용한 그리드</h2>
     <!-- pull -->
     <div class="row">
-      <div class="col-l-1 pull-11">col-l-1 pull-11</div>
+      <div class="col-xl-1 col-lg-1 pull-11"><p>col-xl-1 col-lg-1 pull-11</p></div>
     </div>
     <div class="row">
-      <div class="col-l-2 pull-10">col-l-2 pull-10</div>
+      <div class="col-xl-2 col-lg-2 pull-10"><p>col-xl-2 col-lg-2 pull-10</p></div>
     </div>
     <div class="row">
-      <div class="col-l-3 pull-9">col-l-3 pull-9</div>
+      <div class="col-xl-3 col-lg-3 pull-9"><p>col-xl-3 col-lg-3 pull-9</p></div>
     </div>
     <div class="row">
-      <div class="col-l-4 pull-8">col-l-4 pull-8</div>
+      <div class="col-xl-4 col-lg-4 pull-8"><p>col-xl-4 col-lg-4 pull-8</p></div>
     </div>
     <div class="row">
-      <div class="col-l-5 pull-7">col-l-5 pull-7</div>
+      <div class="col-xl-5 col-lg-5 pull-7"><p>col-xl-5 col-lg-5 pull-7</p></div>
     </div>
     <div class="row">
-      <div class="col-l-6 pull-6">col-l-6 pull-6</div>
+      <div class="col-xl-6 col-lg-6 pull-6"><p>col-xl-6 col-lg-6 pull-6</p></div>
     </div>
 
 <div class="code-block">
-<pre class="prettyprint linenums"><code><div class="row">
-  <div class="col-l-1 pull-11">col-l-1 pull-11</div>
+<pre class="prettyprint"><code><div class="row">
+  <div class="col-xl-1 col-lg-1 pull-11"><p>col-xl-1 col-lg-1 pull-11</p></div>
 </div>
 <div class="row">
-  <div class="col-l-2 pull-10">col-l-2 pull-10</div>
+  <div class="col-xl-2 col-lg-2 pull-10"><p>col-xl-2 col-lg-2 pull-10</p></div>
 </div>
 <div class="row">
-  <div class="col-l-3 pull-9">col-l-3 pull-9</div>
+  <div class="col-xl-3 col-lg-3 pull-9"><p>col-xl-3 col-lg-3 pull-9</p></div>
 </div>
 <div class="row">
-  <div class="col-l-4 pull-8">col-l-4 pull-8</div>
+  <div class="col-xl-4 col-lg-4 pull-8"><p>col-xl-4 col-lg-4 pull-8</p></div>
 </div>
 <div class="row">
-  <div class="col-l-5 pull-7">col-l-5 pull-7</div>
+  <div class="col-xl-5 col-lg-5 pull-7"><p>col-xl-5 col-lg-5 pull-7</p></div>
 </div>
 <div class="row">
-  <div class="col-l-6 pull-6">col-l-6 pull-6</div>
+  <div class="col-xl-6 col-lg-6 pull-6"><p>col-xl-6 col-lg-6 pull-6</p></div>
 </div></code></pre>
 </div>
 
     <!-- push -->
     <div class="row">
-      <div class="col-l-1 push-11">col-l-1 push-11</div>
+      <div class="col-xl-1 col-lg-1 push-11"><p>col-xl-1 col-lg-1 push-11</p></div>
     </div>
     <div class="row">
-      <div class="col-l-2 push-10">col-l-2 push-10</div>
+      <div class="col-xl-2 col-lg-2 push-10"><p>col-xl-2 col-lg-2 push-10</p></div>
     </div>
     <div class="row">
-      <div class="col-l-3 push-9">col-l-3 push-9</div>
+      <div class="col-xl-3 col-lg-3 push-9"><p>col-xl-3 col-lg-3 push-9</p></div>
     </div>
     <div class="row">
-      <div class="col-l-4 push-8">col-l-4 push-8</div>
+      <div class="col-xl-4 col-lg-4 push-8"><p>col-xl-4 col-lg-4 push-8</p></div>
     </div>
     <div class="row">
-      <div class="col-l-5 push-7">col-l-5 push-7</div>
+      <div class="col-xl-5 col-lg-5 push-7"><p>col-xl-5 col-lg-5 push-7</p></div>
     </div>
     <div class="row">
-      <div class="col-l-6 push-6">col-l-6 push-6</div>
+      <div class="col-xl-6 col-lg-6 push-6"><p>col-xl-6 col-lg-6 push-6</p></div>
     </div>
 <div class="code-block">
-<pre class="prettyprint linenums"><code>
+<pre class="prettyprint"><code>
 <div class="row">
-  <div class="col-l-1 push-11">col-l-1 push-11</div>
+  <div class="col-xl-1 col-lg-1 push-11"><p>col-xl-1 col-lg-1 push-11</p></div>
 </div>
 <div class="row">
-  <div class="col-l-2 push-10">col-l-2 push-10</div>
+  <div class="col-xl-2 col-lg-2 push-10"><p>col-xl-2 col-lg-2 push-10</p></div>
 </div>
 <div class="row">
-  <div class="col-l-3 push-9">col-l-3 push-9</div>
+  <div class="col-xl-3 col-lg-3 push-9"><p>col-xl-3 col-lg-3 push-9</p></div>
 </div>
 <div class="row">
-  <div class="col-l-4 push-8">col-l-4 push-8</div>
+  <div class="col-xl-4 col-lg-4 push-8"><p>col-xl-4 col-lg-4 push-8</p></div>
 </div>
 <div class="row">
-  <div class="col-l-5 push-7">col-l-5 push-7</div>
+  <div class="col-xl-5 col-lg-5 push-7"><p>col-xl-5 col-lg-5 push-7</p></div>
 </div>
 <div class="row">
-  <div class="col-l-6 push-6">col-l-6 push-6</div>
+  <div class="col-xl-6 col-lg-6 push-6"><p>col-xl-6 col-lg-6 push-6</p></div>
 </div></code></pre>
 </div>
 
     <div class="row">
-      <div class="col-xl-5 col-l-5 push-3">col-xl-5 col-l-5 push-3</div>
-      <div class="col-xl-4 col-l-4">col-xl-4 col-l-4</div>
+      <div class="col-xl-5 col-lg-5 push-3"><p>col-xl-5 col-lg-5 push-3</p></div>
+      <div class="col-xl-4 col-lg-4"><p>col-xl-4 col-lg-4</p></div>
     </div>
     <div class="row">
-      <div class="col-xl-4 col-l-4">col-xl-4 col-l-4</div>
+      <div class="col-xl-4 col-lg-4"><p>col-xl-4 col-lg-4</p></div>
     </div>
     <div class="row">
-      <div class="col-xl-3 col-l-3 pull-7">col-xl-3 col-l-3 pull-7</div>
-      <div class="col-xl-2 col-l-2">col-xl-2 col-l-2</div>
+      <div class="col-xl-3 col-lg-3 pull-7"><p>col-xl-3 col-lg-3 pull-7</p></div>
+      <div class="col-xl-2 col-lg-2"><p>col-xl-2 col-lg-2</p></div>
     </div>
     <div class="row">
-      <div class="col-xl-4 col-l-4 pull-3">col-xl-4 col-l-4 pull-3</div>
-      <div class="col-xl-2 col-l-2 pull-3">col-xl-2 col-l-2 pull-3</div>
+      <div class="col-xl-4 col-lg-4 pull-3"><p>col-xl-4 col-lg-4 pull-3</p></div>
+      <div class="col-xl-2 col-lg-2 pull-3"><p>col-xl-2 col-lg-2 pull-3</p></div>
     </div>
 
 
 <div class="code-block">
-<pre class="prettyprint linenums"><code>
+<pre class="prettyprint"><code>
 <div class="row">
-  <div class="col-xl-5 col-l-5 push-3">col-xl-5 col-l-5 push-3</div>
-  <div class="col-xl-4 col-l-4">col-xl-4 col-l-4</div>
+  <div class="col-xl-5 col-lg-5 push-3"><p>col-xl-5 col-lg-5 push-3</p></div>
+  <div class="col-xl-4 col-lg-4"><p>col-xl-4 col-lg-4</p></div>
 </div>
 <div class="row">
-  <div class="col-xl-4 col-l-4">col-xl-4 col-l-4</div>
+  <div class="col-xl-4 col-lg-4"><p>col-xl-4 col-lg-4</p></div>
 </div>
 <div class="row">
-  <div class="col-xl-3 col-l-3 pull-7">col-xl-3 col-l-3 pull-7</div>
-  <div class="col-xl-2 col-l-2">col-xl-2 col-l-2</div>
+  <div class="col-xl-3 col-lg-3 pull-7"><p>col-xl-3 col-lg-3 pull-7</p></div>
+  <div class="col-xl-2 col-lg-2"><p>col-xl-2 col-lg-2</p></div>
 </div>
 <div class="row">
-  <div class="col-xl-4 col-l-4 pull-3">col-xl-4 col-l-4 pull-3</div>
-  <div class="col-xl-2 col-l-2 pull-3">col-xl-2 col-l-2 pull-3</div>
+  <div class="col-xl-4 col-lg-4 pull-3"><p>col-xl-4 col-lg-4 pull-3</p></div>
+  <div class="col-xl-2 col-lg-2 pull-3"><p>col-xl-2 col-lg-2 pull-3</p></div>
 </div></code></pre>
 </div>
 
